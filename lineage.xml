@@ -22,41 +22,30 @@
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" />
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="lineage" />
-  <!-- <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" /> 
-  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" /> -->
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" remote="lineage" />
-  <!-- <project path="external/mksh" name="android_external_mksh" remote="lineage" /> -->   
+  <project path="external/mksh" name="android_external_mksh" remote="lineage" />   
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" revision="lineage-18.1" remote="lineage" />
-  <!-- <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="lineage" /> -->
-
-  <!-- <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="lineage" />
-  <project path="hardware/qcom/data/ipacfg-mgr" name="android_hardware_qcom_data_ipacfg-mgr" remote="lineage" /> 
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="lineage" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="android_hardware_qcom_data_ipacfg-mgr" remote="lineage" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="lineage-18.1" remote="lineage" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" revision="lineage-18.1" remote="lineage" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="lineage-18.1" remote="lineage" /> -->
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="lineage-18.1" remote="lineage" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" revision="lineage-19.1-caf" remote="lineage" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-19.1-caf" remote="lineage" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" groups="qcom,pdk-qcom" remote="lineage" />
+
   <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" remote="lineage" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="lineage" />
 
-  <!-- <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="lineage" /> 
-  <project path="packages/modules/common" name="android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
-
-  <project path="system/libziparchive" name="android_system_libziparchive" remote="lineage" />
-  <project path="system/logging" name="android_system_logging" groups="pdk" remote="lineage" /> -->
   <project path="system/qcom" name="android_system_qcom" remote="lineage" />
 
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="lineage" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="lineage" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="lineage" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="lineage" />
-  <!-- <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-19.1-pn5xx" remote="lineage" />
-  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-19.1-pn5xx" remote="lineage" />
-  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-19.1-sn100x" remote="lineage" />
-  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-19.1-sn100x" remote="lineage" />
-  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" remote="lineage" /> -->
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" groups="qcom,pdk-qcom" remote="lineage" />

@@ -7,10 +7,7 @@
   <remove-project name="device/common" />
   <remove-project name="device/generic/arm64" />
   <remove-project name="device/generic/armv7-a-neon" />
-  <remove-project name="device/generic/art" />
   <remove-project name="device/generic/car" />
-  <!-- remove-project name="device/generic/goldfish" />
-  <remove-project name="device/generic/goldfish-opengl" / -->
   <remove-project name="device/generic/mini-emulator-arm64" />
   <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
   <remove-project name="device/generic/mini-emulator-x86" />
@@ -33,8 +30,6 @@
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
-  <!-- remove-project name="device/google/cuttlefish" />
-  <remove-project name="device/google/cuttlefish_prebuilts" / -->
   <remove-project name="device/google/redbull" />
   <remove-project name="device/google/redbull-sepolicy" />
   <remove-project name="device/google/redbull-kernel" />
@@ -66,6 +61,11 @@
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
+
+  <!-- External -->
+  <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/mksh" />
+
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/native" />
@@ -80,6 +80,13 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
+
+  <!-- Hardware (Qcom) -->
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/media" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Nfc" />
