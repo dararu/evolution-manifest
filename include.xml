@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitHub -->
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <!-- GitLab -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <!-- GitHub (Evolution X) -->
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           revision="refs/heads/tiramisu" />
+
+  <!-- GitHub (Evolution X Devices) -->
+  <remote  name="evo-devices"
+           fetch="https://github.com/Evolution-X-Devices"
+           revision="refs/heads/tiramisu" />
+
+  <!-- GitLab (Evolution X) -->
+  <remote  name="evo-gitlab"
+           fetch="https://gitlab.com/EvoX"
+           revision="refs/heads/tiramisu" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="evo" />
+  <project path="frameworks/native" name="frameworks_native" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
+
+  <!-- General repos -->
+  <project path="bionic" name="bionic" remote="evo" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
+  <project path="build/make" name="build" remote="evo" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="evo" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="manifest" name="manifest" remote="evo" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="evo" />
+
+  <!-- Providers repos -->
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+
+  <!-- Services repos -->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+
+  <!-- System repos -->
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
+  <project path="system/media" name="system_media" remote="evo" />
+  <project path="system/security" name="system_security" remote="evo" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+  <project path="system/update_engine" name="system_update_engine" remote="evo" />
+  <project path="system/vold" name="system_vold" remote="evo" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+
+</manifest> 
