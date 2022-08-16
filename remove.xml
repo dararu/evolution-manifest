@@ -9,8 +9,8 @@
   <remove-project name="device/generic/armv7-a-neon" />
   <remove-project name="device/generic/art" />
   <remove-project name="device/generic/car" />
-  <remove-project name="device/generic/goldfish" />
-  <remove-project name="device/generic/goldfish-opengl" />
+  <!-- remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" / -->
   <remove-project name="device/generic/mini-emulator-arm64" />
   <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
   <remove-project name="device/generic/mini-emulator-x86" />
@@ -33,8 +33,8 @@
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
-  <remove-project name="device/google/cuttlefish" />
-  <remove-project name="device/google/cuttlefish_prebuilts" />
+  <!-- remove-project name="device/google/cuttlefish" />
+  <remove-project name="device/google/cuttlefish_prebuilts" / -->
   <remove-project name="device/google/redbull" />
   <remove-project name="device/google/redbull-sepolicy" />
   <remove-project name="device/google/redbull-kernel" />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           revision="refs/heads/arrow-12.1" />
+   
+   <remote  name="evo-devices-snow"
+           fetch="https://github.com/Evolution-X-Devices"
+           revision="refs/heads/snow" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="evo-devices-snow" />
+
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="evo-devices-snow" />
+
+    <!-- Kernel -->
+    <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="evo-devices-snow" /> 
+
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
+
+    <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-gitlab" clone-depth="1" />
+
+    <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" revision="snow" />
+
+</manifest>

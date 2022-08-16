@@ -1171,4 +1171,7 @@
   <!-- Evolution X -->
   <include name="remove.xml" />
   <include name="include.xml" />
+  <include name="raphael.xml" />
+  <!-- LineageOS -->
+  <include name="lineage.xml" />
 </manifest>
