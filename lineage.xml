@@ -9,9 +9,6 @@
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="lineage" />
 
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="lineage" clone-depth="1" />
-  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
-  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" groups="pdk,darwin,x86" clone-depth="1" remote="lineage" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="lineage" />
@@ -54,6 +51,5 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" remote="lineage" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" remote="lineage" />
 </manifest>

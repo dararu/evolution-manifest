@@ -31,6 +31,7 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
 
   <!-- External repos -->
+  <project path="external/selinux" name="external_selinux" remote="evo" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
 
   <!-- Framework repos -->
@@ -40,6 +41,7 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
 
   <!-- General repos -->
+  <project path="art" name="art" remote="evo" />
   <project path="bionic" name="bionic" remote="evo" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
   <project path="build/make" name="build" remote="evo" groups="pdk" >
@@ -107,9 +109,9 @@
   <project path="hardware/qcom-caf/msm8998/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-19.1-caf-msm8998" remote="github" />
   <project path="hardware/qcom-caf/msm8998/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-19.1-caf-msm8998" remote="github" />
   <project path="hardware/qcom-caf/msm8998/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-19.1-caf-msm8998" remote="github" />
-  <project path="hardware/qcom-caf/sdm660/audio" name="ArrowOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="arrow-12.1-caf-sdm660" remote="github" />
-  <project path="hardware/qcom-caf/sdm660/display" name="ArrowOS/android_hardware_qcom_display" groups="qcom,qcom_display" revision="arrow-12.1-caf-sdm660" remote="github" />
-  <project path="hardware/qcom-caf/sdm660/media" name="ArrowOS/android_hardware_qcom_media" groups="qcom,qcom_media" revision="arrow-12.1-caf-sdm660" remote="github" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="ArrowOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="arrow-13.0-caf-sdm660" remote="github" />
+  <project path="hardware/qcom-caf/sdm660/display" name="ArrowOS/android_hardware_qcom_display" groups="qcom,qcom_display" revision="arrow-13.0-caf-sdm660" remote="github" />
+  <project path="hardware/qcom-caf/sdm660/media" name="ArrowOS/android_hardware_qcom_media" groups="qcom,qcom_media" revision="arrow-13.0-caf-sdm660" remote="github" />
   <project path="hardware/qcom-caf/sdm845/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-19.1-caf-sdm845" remote="github" />
   <project path="hardware/qcom-caf/sdm845/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-19.1-caf-sdm845" remote="github" />
   <project path="hardware/qcom-caf/sdm845/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-19.1-caf-sdm845" remote="github" />
@@ -122,10 +124,11 @@
   <project path="hardware/qcom-caf/sm8350/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lineage-19.1-caf-sm8350" remote="github" />
   <project path="hardware/qcom-caf/sm8350/display" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-19.1-caf-sm8350" remote="github" />
   <project path="hardware/qcom-caf/sm8350/media" name="LineageOS/android_hardware_qcom_media" groups="qcom" revision="lineage-19.1-caf-sm8350" remote="github" />
-  <project path="hardware/qcom-caf/wlan" name="ArrowOS/android_hardware_qcom_wlan" revision="arrow-12.1-caf" remote="github" />
+  <project path="hardware/qcom-caf/wlan" name="ArrowOS/android_hardware_qcom_wlan" revision="arrow-13.0-caf" remote="github" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="evo" />
 
-  <!-- Packages repos -->
+  <!-- Packages (Apps) repos -->
+  <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" revision="main" remote="github" />
@@ -134,14 +137,17 @@
   <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" revision="sc-qpr3" remote="github" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
 
-  <!-- Providers repos -->
+  <!-- Packages (Modules) repos -->
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="evo" />
+
+  <!-- Packages (Providers) repos -->
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
 
-  <!-- Resources repos -->
+  <!-- Packages (Resources) repos -->
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="evo" />
 
-  <!-- Services repos -->
+  <!-- Packages (Services) repos -->
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
@@ -156,12 +162,21 @@
   <project path="system/vold" name="system_vold" remote="evo" />
 
   <!-- Vendor repos -->
-  <project path="vendor/codeaurora/telephony" name="ArrowOS/android_vendor_codeaurora_telephony" revision="arrow-12.1" remote="github" />
+  <project path="vendor/codeaurora/telephony" name="ArrowOS/android_vendor_codeaurora_telephony" revision="arrow-13.0" remote="github" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
   <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-gitlab" clone-depth="1" />
 
   <!-- Vendor (Qcom) repos -->
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="arrow-12.1" remote="github" />
-  <project path="vendor/qcom/opensource/dataservices" name="ArrowOS/android_vendor_qcom_opensource_dataservices" revision="arrow-12.1" remote="github" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="ArrowOS/android_vendor_qcom_opensource_healthd-ext" revision="arrow-12.1" remote="github" />
-</manifest> 
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="arrow-13.0" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="ArrowOS/android_vendor_qcom_opensource_dataservices" revision="arrow-13.0" remote="github" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="ArrowOS/android_vendor_qcom_opensource_healthd-ext" revision="arrow-13.0" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="ArrowOS/android_vendor_qcom_opensource_vibrator" revision="arrow-13.0" remote="github" />
+  <!-- raphael repos -->
+  <!--  Device  -->
+  <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="evo-devices"/>
+  <!--  Vendor  -->
+  <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="evo-devices"/>
+  <!--  Kernel  -->
+  <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="evo-devices"/>
+
+</manifest>
