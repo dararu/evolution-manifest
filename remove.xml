@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Device -->
-  
+  <!-- Device -->  
 
-  <!-- Prebuilts -->
-  
+  <!-- Prebuilts -->  
 
   <!-- External -->
+  <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/net" />
+  <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/frameworks/opt/timezonepicker" />
 
   <!-- General -->
   <remove-project name="platform/art" />
@@ -37,15 +41,19 @@
   <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/media" />
 
-  <!-- Packages (Apps)-->
+  <!-- Packages (Apps) -->
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Settings" />
-  <remove-project name="platform/packages/apps/SettingsIntelligence" />
-
+  
 <!-- Packages (Modules) -->
+  <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/Connectivity" />
+   <remove-project name="platform/packages/modules/Permission" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <remove-project name="platform/packages/modules/adb" />
+  <remove-project name="platform/packages/modules/common" />
 
-  <!-- Packages (Providers)-->
+  <!-- Packages (Providers) -->
   <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
 
@@ -55,11 +63,14 @@
 
   <!-- System -->
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/libhidl" />
   <remove-project name="platform/system/libhwbinder" />
+  <remove-project name="platform/system/logging" />
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
+  <remove-project name="platform/system/memory/lmkd" />
 </manifest>
